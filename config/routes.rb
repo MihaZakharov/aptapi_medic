@@ -7,19 +7,19 @@ end
  # devise_for :users
 #  resources :products
   
-  get 'products/all(:id)', to: 'products#all'
-  post 'products/searching', to: 'products#searching'
-  get 'products/:id',      to: 'products#showproductsfromgroup'
+  get 'products/m/all(:id)', to: 'products#all'
+  post 'products/m/searching', to: 'products#searching'
+  get 'products/m/:id',      to: 'products#showproductsfromgroup'
 
-  get 'groups/all',   to: 'groups#all'
-  get 'groups/alln',   to: 'groups#alln'
-  get 'groups/:id',        to: 'groups#showgrp'   
+  get 'groups/m/all',   to: 'groups#all'
+  get 'groups/m/alln',   to: 'groups#alln'
+  get 'groups/m/:id',        to: 'groups#showgrp'   
 
-  get 'pharmacies/all(:id)',   to: 'pharmacies#all'
+  get 'pharmacies/m/all(:id)',   to: 'pharmacies#all'
 
 #  post 'makeinv/:invoice',   to: 'makeinv#all'
-  post 'makeinv',   to: 'makeinv#all'
-  post 'getinvoice',        to: 'getinvoice#showinv'   
-  post 'getinvoice/detail',        to: 'getinvoice#showdetailinvoice'   
+  post 'm/makeinv',   to: 'makeinv#all'
+  post 'm/getinvoice',        to: 'getinvoice#showinv'   
+  post 'm/getinvoice/detail',        to: 'getinvoice#showdetailinvoice'   
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
